@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .main-image {
+            max-width: 85%;
+            height: auto;
+            display: flex;
+            margin: 10px;
+            border-radius: 7%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="minet">
+
+        <div class="menu">
+            <h3 class="logo">HANDS</h3>
+            <div class="linkes">
+                <a href="/deteccion" id="start_detection_button" class="button">Detección</a>
+                <a href="/abecedario" class="button">Abecedario</a>
+                <a href="/saludos" class="button">Saludos</a>
+                <a href="/numeros" class="button">Numeros</a><br>
+                <br>
+                <br>
+                <p>Proyecto Hands V6.0.2 </p>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="navbar">
+                <div class="right-content">
+                    <div class="user">
+                        <img src="../1.png" alt="" width="40" height="40" srcset="">
+                        <span>AlonsoSC</span>
+                    </div>
+
+                    <!-- Notifications Menu -->
+                    <div class="menu-bar notifications-menu">
+                        <button class="menu-button">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                        <div class="menu-content">
+                            <!-- Add your notifications here -->
+                            <p>No new notifications</p>
+                        </div>
+                    </div>
+
+                    <!-- Login/Logout Menu -->
+                    <div class="menu-bar login-logout-menu">
+                        <button class="menu-button">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div class="menu-content">
+                            <!-- Add your login/logout options here -->
+                            <a href="#">Login</a><br>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen en lugar de tarjetas -->
+            <img src="https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/fotoIndex1.jpg" alt="Imagen principal" class="main-image" id="mainImage" onclick="changeImage()">
+        </div>
+
+        <script>
+            function changeImage() {
+                var mainImage = document.getElementById("mainImage");
+                if (mainImage.src === "https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/fotoIndex1.jpg") {
+                    mainImage.src = "https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/fotoIndexDorso.jpg";
+                } else {
+                    mainImage.src = "https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/fotoIndex1.jpg";
+                }
+            }
+        </script>
+            <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </div>
+
+</body>
+
+</html>

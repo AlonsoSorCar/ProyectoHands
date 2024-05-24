@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludos</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Agrega estilos CSS personalizados aquí si es necesario */
+    </style>
+</head>
+
+<body>
+
+    <div class="minet">
+
+        <div class="menu">
+            <h3 class="logo">HANDS</h3>
+            <div class="linkes">
+                <a href="/deteccion" id="start_detection_button" class="button">Detección</a>
+                <a href="/abecedario" class="button">Abecedario</a>
+                <a href="/index" class="button">Inicio</a>
+                <a href="/numeros" class="button">Numeros</a><br>
+                <br>
+                <br>
+                <p>Proyecto Hands V6.0.2 </p>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="navbar">
+                <div class="right-content">
+                    <div class="user">
+                        <img src="../1.png" alt="" width="40" height="40" srcset="">
+                        <span>AlonsoSC</span>
+                    </div>
+
+                    <div class="menu-bar notifications-menu">
+                        <button class="menu-button">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                        <div class="menu-content">
+                            <p>No new notifications</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-bar login-logout-menu">
+                        <button class="menu-button">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div class="menu-content">
+                            <a href="#">Login</a><br>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjetas -->
+            <div class="card-container">
+                <!-- Tarjeta 1 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/l2FhBKXOiBbuFgWVdm/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/l2FhBKXOiBbuFgWVdm/giphy.gif"
+                         data-still="https://media.giphy.com/media/l2FhBKXOiBbuFgWVdm/giphy_s.gif">
+                    <p>Hola</p>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/jrhWgozGWvuXnifBSI/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/jrhWgozGWvuXnifBSI/giphy.gif"
+                         data-still="https://media.giphy.com/media/jrhWgozGWvuXnifBSI/giphy_s.gif">
+                    <p>Buenos Dias</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/H4KmpzZsiNZKCloERr/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/H4KmpzZsiNZKCloERr/giphy.gif"
+                         data-still="https://media.giphy.com/media/H4KmpzZsiNZKCloERr/giphy_s.gif">
+                    <p>Buenas Noches</p>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/SsIgYBlK9HHQCMPGro/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/SsIgYBlK9HHQCMPGro/giphy.gif"
+                         data-still="https://media.giphy.com/media/SsIgYBlK9HHQCMPGro/giphy_s.gif">
+                    <p>Buenas Tardes</p>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/QyPmWewsTSkVyulDKF/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/QyPmWewsTSkVyulDKF/giphy.gif"
+                         data-still="https://media.giphy.com/media/QyPmWewsTSkVyulDKF/giphy_s.gif">
+                    <p>Bien</p>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/cl23EaQycc1ZfdDn3M/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/cl23EaQycc1ZfdDn3M/giphy.gif"
+                         data-still="https://media.giphy.com/media/cl23EaQycc1ZfdDn3M/giphy_s.gif">
+                    <p>No</p>
+                </div>
+                <!-- Tarjeta 7 -->
+                <div class="card">
+                    <img src="https://media.giphy.com/media/huyoIYunUMwXbGc2Wk/giphy_s.gif" 
+                         data-gif="https://media.giphy.com/media/huyoIYunUMwXbGc2Wk/giphy.gif"
+                         data-still="https://media.giphy.com/media/huyoIYunUMwXbGc2Wk/giphy_s.gif">
+                    <p>Si</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        <button id="prevBtn" class="prev">&#10094;</button>
+        <button id="nextBtn" class="next">&#10095;</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='modal.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener todos los elementos div con la clase "card"
+            var cards = document.querySelectorAll('.card');
+
+            // Función para iniciar la reproducción del GIF
+            function playGif(event) {
+                var gif = event.currentTarget.querySelector('img');
+                gif.src = gif.dataset.gif;
+            }
+
+            // Función para detener la reproducción del GIF
+            function stopGif(event) {
+                var gif = event.currentTarget.querySelector('img');
+                gif.src = gif.dataset.still;
+            }
+
+            // Agregar eventos a cada tarjeta
+            cards.forEach(function(card) {
+                // Reproducir GIF al pasar el cursor sobre la tarjeta
+                card.addEventListener('mouseover', playGif);
+                // Detener GIF cuando el cursor sale de la tarjeta
+                card.addEventListener('mouseout', stopGif);
+                // Reproducir GIF al hacer clic en la tarjeta
+                card.addEventListener('click', playGif);
+            });
+        });
+    </script>
+</body>
+
+</html>

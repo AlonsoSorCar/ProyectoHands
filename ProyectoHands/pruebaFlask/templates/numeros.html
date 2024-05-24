@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="minet">
+
+        <div class="menu">
+            <h3 class="logo">HANDS</h3>
+            <div class="linkes">
+                <a href="/deteccion" id="start_detection_button" class="button">Detección</a>
+                <a href="/abecedario" class="button">Abecedario</a>
+                <a href="/saludos" class="button">Saludos</a>
+                <a href="/index" class="button">Inicio</a><br>
+                <br>
+                <br>
+                <p>Proyecto Hands V6.0.2 </p>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="navbar">
+                <div class="right-content">
+                    <div class="user">
+                        <img src="../1.png" alt="" width="40" height="40" srcset="">
+                        <span>AlonsoSC</span>
+                    </div>
+
+                    <div class="menu-bar notifications-menu">
+                        <button class="menu-button">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                        <div class="menu-content">
+                            <p>No new notifications</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-bar login-logout-menu">
+                        <button class="menu-button">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div class="menu-content">
+                            <a href="#">Login</a><br>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjetas -->
+            <div class="card-container">
+                <!-- Tarjeta 1 -->
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/LSE_N1.png" >
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/LSE_N2.png" >
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/LSE_N3.png" >
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/AlonsoSorCar/ImagenesHands/main/LSE_N4.png" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        <button id="prevBtn" class="prev">&#10094;</button>
+        <button id="nextBtn" class="next">&#10095;</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='modal.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
